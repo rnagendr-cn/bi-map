@@ -93,6 +93,7 @@ const DotWorldMap = () => {
 
   return(
     <>
+    <h1>Hexbin tesselation of number of locations</h1>
     <svg viewBox={[0, 0, WIDTH, HEIGHT]}>
       <rect width={WIDTH} height={HEIGHT} fill="white" />
       {
