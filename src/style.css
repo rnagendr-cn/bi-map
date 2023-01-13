@@ -1,0 +1,203 @@
+html, body, #root, .App {
+  height: 100%;
+  width: 100%;
+}
+html {
+  background-color: white;
+}
+
+body {
+  margin: 0;
+  overscroll-behavior: none;
+  width: 100%;
+  font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: url("./font/Rubik-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: url("./font/Rubik-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: url("./font/Rubik-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: url("./font/Rubik-Bold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: url("./font/Rubik-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: url("./font/Rubik-Italic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: url("./font/Rubik-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: url("./font/Rubik-BoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+}
+
+.us-map-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.maps-tooltip-container {
+  width: 200px;
+  background: white;
+  border: 1px solid #c1c1c1;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 15px;
+  border-radius: 10px;
+  pointer-events: none;
+}
+
+.maps-tooltip-container .maps-tooltip-divider {
+  display: inline-block;
+  border-top: 1px solid #c1c1c1;
+  width: 170px;
+  margin: 0 0 10px 0;
+}
+
+.maps-tooltip-container p {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.maps-tooltip-container p span {
+  font-weight: bold;
+}
+
+.us-animated-state-map {
+  width: 100%;
+}
+
+.us-animated-state-map-description {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.us-animated-state-map-legend,
+.us-animated-state-map-legend-container,
+.us-animated-state-map-legend-labels {
+  display: flex;
+}
+
+.us-animated-state-map-legend {
+  flex-direction: column;
+}
+
+.us-animated-state-map-legend-box {
+  width: 30px;
+  height: 30px;
+  border-left: 2px solid black;
+}
+
+.us-animated-state-map-legend-labels p {
+  margin-right: 10px;
+  font-size: 11px;
+}
+
+/* USCountyBubble */
+.land {
+  fill: #ddd;
+}
+
+.border {
+  fill: none;
+  stroke: #fff;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.bubble {
+  fill: #B92058;
+  fill-opacity: .6;
+  stroke: #fff;
+  stroke-width: .5px;
+}
+
+.bubble :hover {
+  stroke: #000;
+}
+
+.legend circle {
+  fill: none;
+  stroke: #ccc;
+}
+
+.legend text {
+  fill: #777;
+  font: 10px sans-serif;
+  text-anchor: middle;
+}
+
+
+/* USCountyChoropleth */
+.choropleth-legend-container {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  margin-bottom: 2rem;
+}
+
+.choropleth-legend-container p {
+  margin-bottom: 0;
+  font-size: 12px;
+}
+
+.choropleth-legend {
+  display: flex;
+}
+
+.choropleth-legend-item {
+  display: flex;
+  width: 30px;
+  height: 15px;
+}

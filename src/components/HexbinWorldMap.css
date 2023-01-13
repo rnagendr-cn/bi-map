@@ -1,0 +1,27 @@
+.hexbinMap__legendContainer {
+  display: flex;
+  flex-direction: column;
+  max-width: 200px;
+  align-self: flex-end;
+}
+
+.hexbinMap__legendContainer img {
+  height: 20px;
+}
+
+.hexbinMap__legendValues {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hexbinMap__legendTitle {
+  margin-bottom: 3px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.hexbinMap__legendMinValue,
+.hexbinMap__legendMaxValue {
+  margin-bottom: 0;
+  font-size: 12px;
+}
